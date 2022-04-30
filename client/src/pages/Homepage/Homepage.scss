@@ -1,0 +1,66 @@
+$header-height: 40px;
+$main-color: #4ACE89;
+$light-color: #F5F5F5;
+
+.homepage__container {
+    width: 100%;
+    background-color: $light-color;
+
+    header {
+        width: 100%;
+        height: $header-height;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 10px;
+        background-color: #fff;
+    }
+
+    .hero {
+        width: 100%;
+        position: relative;
+        height: calc(100vh - $header-height);
+
+        .hero__overlay-left {
+            background-color: $main-color;
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            left: 0;
+            top: 0px;
+        }
+
+        .hero__content {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: 8em;
+                line-height: 1;
+
+                span {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .homepage__container {
+        .hero {
+            .hero__content {
+                h1 {
+                    font-size: 5em;
+                }
+            }
+        }
+    }
+}
