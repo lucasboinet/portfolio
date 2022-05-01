@@ -194,6 +194,29 @@ $light-color: #F5F5F5;
     }
 }
 
+@media screen and (max-width: 940px) {
+    .homepage__container {
+        .about-me {
+            .about-me__wrapper {
+                flex-direction: column;
+                width: 70%;
+                gap: 30px;
+
+                > div:first-child {
+                    width: 100%;
+                    transform: translate(0);
+                }
+
+                > div:last-child {
+                    transform: translate(0);
+                    padding: 30px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     .homepage__container {
         .hero {
@@ -201,6 +224,14 @@ $light-color: #F5F5F5;
                 h1 {
                     font-size: 5em;
                 }
+            }
+        }
+
+        .about-me {
+            .about-me__wrapper {
+                flex-direction: column;
+                width: 85%;
+                gap: 30px;
             }
         }
     }

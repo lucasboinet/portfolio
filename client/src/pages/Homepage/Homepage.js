@@ -36,11 +36,11 @@ export default function Homepage() {
           <section className='about-me'>
             <h2 id="about-title" data-aos="fade-up">About me 👋</h2>
             <div data-aos="fade-up" className='about-me__wrapper'>
-              <div data-aos-anchor="#about-title">
+              <div>
                 <img src="images/moi.jpg" alt="" />
                 <p>👨‍💻</p>
               </div>
-              <div data-aos-anchor="#about-title" data-aos-delay="300">
+              <div>
                 <div className='about-me__window-header'>
                   <span></span>
                   <span></span>

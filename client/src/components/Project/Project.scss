@@ -2,7 +2,7 @@ $main-color: #4ACE89;
 $light-color: #F5F5F5;
 
 .project {
-    width: 85%;
+    width: 80%;
     background-color: $light-color;
     border-radius: 10px;
     display: flex;
@@ -10,9 +10,10 @@ $light-color: #F5F5F5;
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
-    height: 300px;
+    min-height: 300px;
 
     .figure-wrapper {
+        min-height: 300px;
         height: 100%;
         min-width: 35%;
         position: relative;
@@ -32,7 +33,12 @@ $light-color: #F5F5F5;
 
     .content {
         padding: 30px;
-        padding-left: 50px;
+        padding-left: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
 
         .project__skills {
             display: flex;
@@ -50,8 +56,33 @@ $light-color: #F5F5F5;
         
         .content {
             padding: 30px;
-            padding-right: 50px;
+            padding-right: 70px;
+            align-items: flex-end;
         }
 
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .project {
+        flex-direction: column;
+
+        .figure-wrapper {
+            width: 100%;
+            transform: scale(1);
+        }
+
+        .content {
+            width: 100%;
+            padding: 30px;
+        }
+
+        &.reversed {
+            flex-direction: column;
+
+            .content {
+                align-items: flex-start;
+            }
+        }
     }
 }
