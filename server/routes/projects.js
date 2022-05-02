@@ -8,4 +8,12 @@ router.get('/', (req, res) => {
         .catch((err) => res.status(400).json({success: false}))
 })
 
+router.get('/:id', (req, res) => {
+    const project_id = req.params.id;
+
+    Project.findOne({_id: project_id})
+        .then((project) => res.status(200).json({project, success: true}))
+        .catch((err) => res.status(400).json({success: false}))
+})
+
 module.exports = router;
