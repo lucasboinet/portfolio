@@ -15,7 +15,7 @@ export default function Homepage() {
     }, [])
   
     const fetchProjects = () => {
-      axios.get(process.env.REACT_APP_API_URL+'/projects')
+      axios.get(process.env.REACT_APP_API_URL+'projects')
         .then((res) => {
           setProjects(res.data.projects);
           setLoading(false);
