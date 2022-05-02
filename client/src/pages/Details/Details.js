@@ -15,7 +15,7 @@ export default function Details() {
     }, [id])
 
     const fetchProject = () => {
-        axios.get(process.env.REACT_APP_API_URL+'/projects/'+id)
+        axios.get(process.env.REACT_APP_API_URL+'projects/'+id)
             .then((res) => {
                 setProject(res.data.project)
                 setLoading(false)

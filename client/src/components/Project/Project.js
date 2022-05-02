@@ -1,7 +1,14 @@
 import Skill from "@/components/Skill/Skill"
+import { useNavigate } from 'react-router';
 import './Project.scss';
 
 export default function Project({project, reversed}) {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate(`/project/${project._id}`)
+    }
+
     return (
         <div className={"project" + (reversed ? ' reversed' : '')}>
             <div className="figure-wrapper">
@@ -17,7 +24,7 @@ export default function Project({project, reversed}) {
                     <Skill key={index} icon="images/flutter.svg" name={language} />
                 ))}
                 </div>
-                <button className="project__btn"><img src="images/more.svg" alt="" /></button>
+                <button className="project__btn" onClick={handleClick}><img src="images/more.svg" alt="" /></button>
             </div>
         </div>
     )
