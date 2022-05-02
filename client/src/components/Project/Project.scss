@@ -8,9 +8,10 @@ $light-color: #F5F5F5;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
     position: relative;
     min-height: 300px;
+
 
     .figure-wrapper {
         min-height: 300px;
@@ -38,7 +39,11 @@ $light-color: #F5F5F5;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        height: 100%;
+        width: 100%;
+
+        h3 {
+            margin-bottom: 40px;
+        }
 
         .project__skills {
             display: flex;
@@ -49,6 +54,25 @@ $light-color: #F5F5F5;
             margin-top: 40px;
             flex-wrap: wrap;
         }
+
+        .project__btn {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            border: none;
+            border-radius: 100%;
+            background-color: $main-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            width: 45px;
+            height: 45px;
+
+            img {
+                width: 20px;
+            }
+        }
     }
 
     &.reversed {
@@ -58,6 +82,12 @@ $light-color: #F5F5F5;
             padding: 30px;
             padding-right: 70px;
             align-items: flex-end;
+
+            .project__btn {
+                bottom: 30px;
+                right: unset;
+                left: 30px;
+            }
         }
 
     }
@@ -82,6 +112,12 @@ $light-color: #F5F5F5;
 
             .content {
                 align-items: flex-start;
+
+                .project__btn {
+                    bottom: 30px;
+                    right: 30px;
+                    left: unset;
+                }
             }
         }
     }

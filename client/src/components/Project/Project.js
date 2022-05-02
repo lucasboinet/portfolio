@@ -17,6 +17,7 @@ export default function Project({project, reversed}) {
                     <Skill key={index} icon="images/flutter.svg" name={language} />
                 ))}
                 </div>
+                <button className="project__btn"><img src="images/more.svg" alt="" /></button>
             </div>
         </div>
     )
