@@ -1,0 +1,238 @@
+$header-height: 40px;
+$main-color: #4ACE89;
+$light-color: #F5F5F5;
+
+.homepage__container {
+    width: 100%;
+    background-color: $light-color;
+
+    header {
+        width: 100%;
+        height: $header-height;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 10px;
+        background-color: #fff;
+    }
+
+    .hero {
+        width: 100%;
+        position: relative;
+        height: calc(100vh - $header-height);
+
+        .hero__overlay-left {
+            background-color: $main-color;
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            left: 0;
+            top: 0px;
+        }
+
+        .hero__content {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: 8em;
+                line-height: 1;
+
+                span {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+
+    .about-me {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        h2 {
+            font-size: 2.5em;
+            padding: 1.5em 0;
+        }
+
+        .about-me__wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            width: 90%;
+
+            > div:first-child {
+                position: relative;
+                border-radius: 15px;
+                overflow: hidden;
+                z-index: 1;
+                width: 350px;
+                transform: translateX(25px);
+    
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+                }
+
+                img {
+                    width: 100%;
+                }
+    
+                p {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+                    margin: 0;
+                    font-size: 2em;
+                    z-index: 1;
+                }
+            }
+
+            > div:last-child {
+                width: 60%;
+                position: relative;
+                transform: translate(-25px, 50px);
+                z-index: 0;
+                padding: 20px 20px 30px 75px;
+                border-radius: 15px;
+                background-color: $light-color;
+                overflow: hidden;
+
+                .about-me__window-header {
+                    width: 100%;
+                    height: 40px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: #E7E7E7;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    span {
+                        background-color: #FF605C;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 100%;
+                        margin-right: 15px;
+
+                        &:nth-child(2) {
+                            background-color: #FFBD44;
+                        }
+
+                        &:nth-child(3) {
+                            background-color: #00CA4E;
+                        }
+                    }
+                }
+                
+                h3 {
+                    color: $main-color;
+                    font-size: 1.5em;
+                    margin-bottom: 30px;
+                    margin-top: 30px;
+                    font-weight: bold;
+                }
+
+                p {
+                    font-size: 0.9em;
+                    margin-bottom: 30px;
+
+                    &:nth-child(2) {
+                        font-weight: bold;
+                    }
+                }
+
+                ul {
+                    font-size: 0.9em;
+                    list-style-type: none;
+                }
+
+                .about-me__skills {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 20px;
+                    margin-top: 40px;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+
+    .projects-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 70px;
+        margin-bottom: 100px;
+        background-color: #fff;
+        gap: 100px;
+        
+        h2 {
+            font-size: 2.5em;
+            padding: 1.5em 0;
+        }
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .homepage__container {
+        .about-me {
+            .about-me__wrapper {
+                flex-direction: column;
+                width: 70%;
+                gap: 30px;
+
+                > div:first-child {
+                    width: 100%;
+                    transform: translate(0);
+                }
+
+                > div:last-child {
+                    transform: translate(0);
+                    padding: 30px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .homepage__container {
+        .hero {
+            .hero__content {
+                h1 {
+                    font-size: 5em;
+                }
+            }
+        }
+
+        .about-me {
+            .about-me__wrapper {
+                flex-direction: column;
+                width: 85%;
+                gap: 30px;
+            }
+        }
+    }
+}
