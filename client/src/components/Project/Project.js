@@ -16,7 +16,7 @@ export default function Project({project, reversed}) {
             </div>
             <div className="content">
                 <div>
-                    <h3 data-aos="fade-up">{project.name}</h3>
+                    <h3 data-aos="fade-up">{project.name} - {project.date}</h3>
                     <p data-aos="fade-up">{project.description}</p>
                 </div>
                 <div className='project__skills'>

@@ -47,7 +47,7 @@ export default function Homepage() {
                   <span></span>
                 </div>
                 <h3 data-aos="fade-up">Hello, @you !</h3>
-                <p data-aos="fade-up">Elit sunt minim proident fugiat esse culpa eu aliquip ad nisi consectetur. Et in ullamco exercitation in ullamco mollit ex. Esse reprehenderit deserunt ipsum Lorem culpa dolore sit et esse.</p>
+                <p data-aos="fade-up">I'm 21, currently living in Lyon (69100). I started to be interested by programming and more specifically about web development around the age of 14. I started like everyone else, with the siteduzero now known as openclassrooms. Apart from dev, I like playing video games, listen to music and watching movies/anime (toudoummm) !</p>
                 <p data-aos="fade-up">My path:</p>
                 <ul>
                   <li data-aos="fade-up">👉 Fullstack web developer at Tokatab (2021 - Lyon)</li>
@@ -55,14 +55,14 @@ export default function Homepage() {
                   <li data-aos="fade-up">👉 Computer Science DUT (2019 to 2021 - Grenoble)</li>
                 </ul>
                 <div className='about-me__skills'>
-                  <Skill icon="images/vuejs.svg" name="Vue" />
-                  <Skill icon="images/react.svg" name="React" />
-                  <Skill icon="images/laravel.svg" name="laravel" />
-                  <Skill icon="images/typescript.svg" name="Typescript" />
-                  <Skill icon="images/nodejs.svg" name="Node" />
-                  <Skill icon="images/postgresql.svg" name="SQL" />
-                  <Skill icon="images/mongodb.svg" name="MongoDB" />
-                  <Skill icon="images/flutter.svg" name="Flutter" />
+                  <Skill name="VueJS" />
+                  <Skill name="React" />
+                  <Skill name="laravel" />
+                  <Skill name="Typescript" />
+                  <Skill name="NodeJS" />
+                  <Skill name="SQL" />
+                  <Skill name="MongoDB" />
+                  <Skill name="Flutter" />
                 </div>
               </div>
             </div>
