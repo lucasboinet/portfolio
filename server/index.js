@@ -14,7 +14,7 @@ connectDB();
 app.use(express.json({ extended: false }));
 app.use(cors());
 
-app.use('/projects', projects);
+app.use('/api/projects', projects);
 
 const port = process.env.PORT || 3030;
 
