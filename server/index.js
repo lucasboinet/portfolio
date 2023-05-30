@@ -14,8 +14,10 @@ connectDB();
 app.use(express.json({ extended: false }));
 app.use(cors());
 
-app.use('/api/projects', projects);
+app.use('/projects', projects);
 
 const port = process.env.PORT || 3030;
 
 app.listen(port, () => console.log(`Server running on http://localhost:${port}`));
+
+export default app;
