@@ -50,10 +50,12 @@ export const DATA = {
     {
       company: "Freelance",
       href: "https://skyloud.fr",
+      badges: [],
       location: "Lyon, FR & Remote",
       title: "Full-stack Developer",
       logoUrl: "/logo.jpg",
       start: "September 2024",
+      end: '',
       description: "I'm open to any **Full-stack**/**Frontend** web development or **Webflow** opportuny. You can contact me at **lucasboinet.pro@gmail.com**",
     },
     {
