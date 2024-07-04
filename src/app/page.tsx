@@ -1,9 +1,8 @@
-import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
-import { SerivesBento } from "@/components/services-bento";
+import { ServicesBento } from "@/components/services-bento";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
@@ -30,12 +29,6 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
-
-              <BlurFade delay={BLUR_FADE_DELAY}>
-                <Markdown className="prose mt-6 max-w-full text-pretty font-sans md:text-sm text-xs text-muted-foreground dark:prose-invert">
-                  {DATA.featuring}
-                </Markdown>
-              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
@@ -51,18 +44,35 @@ export default function Page() {
           <h2 className="text-xl font-bold">About</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert mt-2">
             {DATA.summary}
           </Markdown>
         </BlurFade>
       </section>
+      <BlurFade delay={BLUR_FADE_DELAY * 3}>
+        <section id="recommandations" className="bg-[#6bd6a6] bg-opacity-20 dark:bg-opacity-15 border rounded-lg p-4 min-h-24">
+            <h2 className="text-xl font-bold">Partenaire</h2>
+            <div className="mt-3">
+              {DATA.recommandations.map((recommandation) =>(
+                <BlurFade key={recommandation.contact} delay={BLUR_FADE_DELAY}>
+                  <div className="flex flex-row items-center gap-2">
+                    <p>
+                      <a href="https://hugoboinet.fr" target="_blank" className="font-bold underline text-black dark:text-white text-sm">@hugoboinet</a>{", "}
+                      spécialisé en Graphisme et Webdesign. N&apos;hésitez pas à le contacter pour vos besoins en design.
+                    </p>
+                  </div>
+                </BlurFade>
+              ))}
+            </div>
+        </section>
+      </BlurFade>
       <section id="services">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Services</h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 6}>
-            <SerivesBento />
+            <ServicesBento />
           </BlurFade>
         </div>
       </section>

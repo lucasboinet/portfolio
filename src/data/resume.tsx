@@ -1,4 +1,5 @@
 import { Icons } from "@/components/icons";
+import { link } from "fs";
 
 export const DATA = {
   name: "Lucas Boinet",
@@ -7,8 +8,14 @@ export const DATA = {
   location: "Lyon, FR",
   locationLink: "https://www.google.com/maps/place/lyon",
   description: "Freelance Developpeur Full-stack & Webflow.",
-  featuring: "Pour toutes demandes concernant de la direction artistique (maquettes de site internet, logo, identité, ...), je me permet de vous orienter vers [@hugoboinet](https://hugoboinet.fr).",
-  summary: "J'ai toujours aimé les ordinateurs et l'informatique. C'est donc tout naturellement que j'ai poursuivi mes études en informatique après le lycée. J'ai été diplômé du [DUT informatique de l'IUT2 de Grenoble](/#education) en 2021 et j'ai ensuite obtenu un [Master en Développement Web et Systèmes d'Information à Ynov Lyon](/#education).",
+  recommandations: [
+    {
+      profession: "Directeur Artistique",
+      link: "https://hugoboinet.fr",
+      contact: "@hugoboinet"
+    }
+  ],
+  summary: "Diplômé du [DUT informatique de l'IUT2 de Grenoble](/#education) en 2021, j'ai ensuite obtenu un [Master en Développement Web et Systèmes d'Information à Ynov Lyon](/#education).",
   avatarUrl: "/me.jpg",
   skills: [
     "Webflow",
