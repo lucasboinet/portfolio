@@ -209,6 +209,7 @@ export const DATA = {
     },
     {
       title: "My Devops",
+      href: "",
       dates: "2023",
       active: true,
       description: "Coming soon",
