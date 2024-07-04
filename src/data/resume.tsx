@@ -6,12 +6,12 @@ export const DATA = {
   url: "https://lucasboinet.fr",
   location: "Lyon, FR",
   locationLink: "https://www.google.com/maps/place/lyon",
-  description:
-    "French Web Developer looking for freelance opportunity. I love building things and helping people.",
-  summary:
-    "I've always loved computers and IT. So it was natural for me to continue my studies in computer science after high school. [I graduated from the computer science DUT](/#education) of IUT2 Grenoble in 2021 and then went on to get my [Master's degree in Web Development and Information Systems](/#education) from Ynov Lyon.",
+  description: "Freelance Developpeur Full-stack & Webflow.",
+  featuring: "Pour toutes demandes concernant de la direction artistique (maquettes de site internet, logo, identité, ...), je me permet de vous orienter vers [@hugoboinet](https://hugoboinet.fr).",
+  summary: "J'ai toujours aimé les ordinateurs et l'informatique. C'est donc tout naturellement que j'ai poursuivi mes études en informatique après le lycée. J'ai été diplômé du [DUT informatique de l'IUT2 de Grenoble](/#education) en 2021 et j'ai ensuite obtenu un [Master en Développement Web et Systèmes d'Information à Ynov Lyon](/#education).",
   avatarUrl: "/me.jpg",
   skills: [
+    "Webflow",
     "VueJS",
     "React",
     "Next.js",
@@ -25,7 +25,7 @@ export const DATA = {
     "CSS",
     "Git",
     "CI/CD",
-    "English (B2)"
+    "Anglais (B2)"
   ],
   contact: {
     email: "lucasboinet.pro@gmail.com",
@@ -52,7 +52,7 @@ export const DATA = {
       href: "https://skyloud.fr",
       badges: [],
       location: "Lyon, FR & Remote",
-      title: "Full-stack Developer",
+      title: "Développeur Full-stack",
       logoUrl: "/logo.jpg",
       start: "September 2024",
       end: '',
@@ -61,44 +61,44 @@ export const DATA = {
     {
       company: "Skyloud",
       href: "https://skyloud.fr",
-      badges: ["Work-study", "Vue 3", "Express", "Mongo", "Microservices"],
+      badges: ["Alternance", "Vue 3", "Express", "Mongo", "Microservices"],
       location: "Lyon, FR",
-      title: "Full-stack Developer",
+      title: "Développeur Full-stack",
       logoUrl: "/skyloud.jfif",
       start: "July 2022",
       end: "September 2024",
-      description: "Had the job to add new features and improve the app overall. Their app (Skyloud App) is an app that link customer and DevOps along the infrastructure design, building or migration process. It also automatically invoices customer who request assignments in their infrastructure.",
+      description: "J'avais pour mission d'ajouter de nouvelles fonctionnalités et d'améliorer l'application dans son ensemble. Leur application (Skyloud App) est une application qui relie le client et les DevOps tout au long du processus de conception, de construction ou de migration de l'infrastructure. Elle permet également de facturer automatiquement les clients qui font des demandes concernant leur infrastructure.",
     },
     {
       company: "Tokatab",
-      badges: ["Work-study", "Vue 2", "Laravel", "Postgres", "Quasar"],
+      badges: ["Alternance", "Vue 2", "Laravel", "Postgres", "Quasar"],
       href: "https://tokatab.com",
       location: "Remote",
-      title: "Full-stack Developer",
+      title: "Développeur Full-stack",
       logoUrl: "/tokatab.jfif",
       start: "October 2021",
       end: "July 2022",
       description:
-        "Had the job to add new features and improve the app overall. Their app is an virtual piano teacher who will guide you through the learning process and provide you with advice and guidance.",
+        "J'avais pour mission d'ajouter de nouvelles fonctionnalités et d'améliorer l'application dans son ensemble. Leur application est un professeur de piano virtuel qui vous guidera tout au long du processus d'apprentissage et vous donnera des conseils.",
     },
     {
       company: "MVP",
       href: "https://mvp.eu/",
-      badges: ["Internship"],
+      badges: ["Stage"],
       location: "Grenoble, FR",
-      title: "Web developer",
+      title: "Développeur Web",
       logoUrl: "/mvp.png",
       start: "Mai 2021",
       end: "July 2021",
       description:
-        "Had the job to add new templates for their live screen display app.",
+        "J'avais pour mission d'ajouter de nouveaux templates pour leur application d'affichage en direct.",
     },
   ],
   education: [
     {
       school: "Lyon Ynov Campus",
       href: "https://buildspace.so",
-      degree: "Master 2 - Web Development and Information Systems",
+      degree: "Master 2 - Développement Web et Systèmes d'Information",
       logoUrl: "/ynovlyon.jfif",
       start: "2023",
       end: "2024",
@@ -106,7 +106,7 @@ export const DATA = {
     {
       school: "Lyon Ynov Campus",
       href: "https://uwaterloo.ca",
-      degree: "Master 1 - Web Development",
+      degree: "Master 1 - Développement Web",
       logoUrl: "/ynovlyon.jfif",
       start: "2021",
       end: "2023",
@@ -114,7 +114,7 @@ export const DATA = {
     {
       school: "IUT2 Grenoble",
       href: "https://wlu.ca",
-      degree: "Computer science DUT",
+      degree: "DUT Informatique",
       logoUrl: "/iut2.jfif",
       start: "2019",
       end: "2021",
@@ -122,7 +122,7 @@ export const DATA = {
     {
       school: "Lycée Ella Fitzgerald",
       href: "https://ibo.org",
-      degree: "Baccalaureate (specializing in economics)",
+      degree: "Baccalauréat (Economique et sociale)",
       logoUrl: "/ellafitzgerald.jfif",
       start: "2017",
       end: "2019",
@@ -135,7 +135,7 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "Multiplayer gaming platform that allow you to play and customize games like Undercover, Speedrundle or even Werewolves game.",
+        "Plateforme de jeux multijoueurs qui vous permet de jouer et de personnaliser des jeux comme Undercover, Speedrundle ou encore le Loup Garou.",
       technologies: [
         "Vue 3",
         "Typescript",
@@ -162,7 +162,7 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "App that link customer and DevOps along the infrastructure design, building or migration process. It also automatically invoices customer who request assignments in their infrastructure.",
+        "App qui fait le lien entre le client et les DevOps tout au long du processus de conception, de construction ou de migration de l'infrastructure. Elle permet également de facturer automatiquement les clients qui onts des demandes concernant leur infrastructure.",
       technologies: [
         "Vue 3",
         "ExpressJS",
@@ -187,7 +187,7 @@ export const DATA = {
       dates: "2023",
       active: true,
       description:
-        "Developed an app that allow you to create resume with drag and drop customizable elements (image, text, shapes) in a sheet.",
+        "Application qui permet de créer des CV en glissant et déposant des éléments personnalisables (image, texte, formes) dans un espace de travail.",
       technologies: [
         "Next.js",
         "ExpressJS",
@@ -208,30 +208,24 @@ export const DATA = {
       video: "https://cdn.llm.report/openai-demo.mp4",
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
+      title: "My Devops",
+      dates: "2023",
       active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
+      description: "Coming soon",
+      technologies: ["Coming soon"],
+      links: [],
+      image: "",
+      video:
+        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+    },
+    {
+      title: "Wagers",
+      href: "",
+      dates: "2022",
+      active: true,
+      description: "Coming soon",
+      technologies: ["Coming soon"],
+      links: [],
       image: "",
       video:
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",

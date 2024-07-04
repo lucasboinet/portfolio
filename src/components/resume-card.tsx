@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
+import Markdown from "react-markdown";
 
 interface ResumeCardProps {
   logoUrl: string;
@@ -51,8 +52,10 @@ export const ResumeCard = ({
             </div>
             {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
           </CardHeader>
-          <CardContent className="mt-2 text-xs sm:text-sm">
-            {description}
+          <CardContent className="mt-2">
+            <Markdown className="prose max-w-full text-pretty font-sans text-xs sm:text-sm text-muted-foreground dark:prose-invert">
+              {description}
+            </Markdown>
           </CardContent>
           {badges && badges.length > 0 && (
             <div className="inline-flex gap-x-2 mb-2">

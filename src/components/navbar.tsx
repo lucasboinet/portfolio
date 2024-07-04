@@ -35,24 +35,6 @@ export default function Navbar() {
             </TooltipContent>
           </Tooltip>
         </DockIcon>
-        <DockIcon>
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Link
-                href="/blog"
-                className={cn(
-                  buttonVariants({ variant: "ghost", size: "icon" }),
-                  "size-12"
-                )}
-              >
-                <NotebookIcon className="size-4" />
-              </Link>
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Blog</p>
-            </TooltipContent>
-          </Tooltip>
-        </DockIcon>
         <Separator orientation="vertical" className="h-full" />
         {Object.entries(DATA.contact.social).map(([name, social]) => (
           <DockIcon key={name}>
@@ -60,6 +42,7 @@ export default function Navbar() {
               <TooltipTrigger asChild>
                 <Link
                   href={social.url}
+                  target="_blank"
                   className={cn(
                     buttonVariants({ variant: "ghost", size: "icon" }),
                     "size-12"
