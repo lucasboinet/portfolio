@@ -1,16 +1,5 @@
-import { CalendarIcon, FileTextIcon, InputIcon } from "@radix-ui/react-icons";
+import { InputIcon } from "@radix-ui/react-icons";
 import { Share2Icon } from "lucide-react";
- 
-import { cn } from "@/lib/utils";
-import { Calendar } from "@/components/ui/calendar";
-import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-} from "@/components/ui/command";
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import IconCloud from "@/components/magicui/icon-cloud";
 import Image from "next/image";

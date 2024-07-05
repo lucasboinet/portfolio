@@ -49,7 +49,7 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
-      <BlurFade delay={BLUR_FADE_DELAY * 3}>
+      {/* <BlurFade delay={BLUR_FADE_DELAY * 3}>
         <section id="recommandations" className="bg-[#6bd6a6] bg-opacity-20 dark:bg-opacity-15 border rounded-lg p-4 min-h-24">
             <h2 className="text-xl font-bold">Partenaire</h2>
             <div className="mt-3">
@@ -65,7 +65,7 @@ export default function Page() {
               ))}
             </div>
         </section>
-      </BlurFade>
+      </BlurFade> */}
       <section id="services">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
