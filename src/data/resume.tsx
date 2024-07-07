@@ -1,5 +1,4 @@
 import { Icons } from "@/components/icons";
-import { link } from "fs";
 
 export const DATA = {
   name: "Lucas Boinet",
@@ -7,7 +6,7 @@ export const DATA = {
   url: "https://lucasboinet.fr",
   location: "Lyon, FR",
   locationLink: "https://www.google.com/maps/place/lyon",
-  description: "Freelance Developpeur Full-stack & Webflow.",
+  description: "Freelance Developpeur Full-stack & Webflow",
   recommandations: [
     {
       profession: "Directeur Artistique",

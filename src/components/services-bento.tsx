@@ -36,14 +36,13 @@ const slugs = [
  
 const features = [
   {
-    Icon: InputIcon,
-    name: "Développement d'application",
-    description: "Ajout de fonctionnalité, développement complet, conseils",
+    name: "Développement d'application web",
+    description: "Ajout de nouvelles fonctionnalités, développement complet",
     href: "/#contact",
     cta: "Prendre contact",
-    className: "col-span-3",
+    className: "col-span-4",
     background: (
-      <div className="absolute opacity-65 right-0 top-0 w-[70%] origin-top translate-x-0 transition-all duration-300 ease-out group-hover:-translate-x-10" >
+      <div className="absolute opacity-65 right-0 -top-20 w-[90%] transition-all duration-300 ease-out group-hover:scale-110" >
         <IconCloud 
           iconSlugs={slugs} 
         />
@@ -51,21 +50,48 @@ const features = [
     ),
   },
   {
-    Icon: Share2Icon,
-    name: "Création de site internet",
-    description: "Création de votre site internet clés en main avec Webflow",
+    name: "Création de site Webflow",
+    description: "Clés en main avec une solution no-code",
     href: "/#contact",
     cta: "Prendre contact",
     className: "col-span-3",
     background: (
-      <div className="flex flex-col gap-2 opacity-70 absolute right-10 top-1/2 -translate-y-1/2 w-[70%] origin-top translate-x-0 transition-all duration-300 ease-out group-hover:translate-x-10">
+      <>
         <Image 
           src="/webflow.svg" 
           alt="Webflow logo"
-          width="300"
+          className="block dark:hidden opacity-70 absolute left-1/2 top-1/2 w-[70%] md:w-[80%] -translate-x-1/2 -translate-y-20 transition-all duration-300 ease-out group-hover:scale-110"        width="400"
           height="100"
         />
-      </div>
+        <Image 
+          src="/webflow_white.svg" 
+          alt="Webflow logo"
+          className="hidden dark:block opacity-70 absolute left-1/2 top-1/2 w-[70%] md:w-[80%] -translate-x-1/2 -translate-y-20 transition-all duration-300 ease-out group-hover:scale-110"        width="400"
+          height="100"
+        />
+      </>
+    ),
+  },
+  {
+    name: "Développement de site internet",
+    description: "Sur-mesure en fonction de vos besoins",
+    href: "/#contact",
+    cta: "Prendre contact",
+    className: "col-span-3",
+    background: (
+      <>
+      </>
+    ),
+  },
+  {
+    name: "Logo & identité visuelle",
+    description: "Tous vos besoins en graphisme. En collaboration avec (@hugoboinet)[https://hugoboinet.fr]",
+    href: "/#contact",
+    cta: "Prendre contact",
+    className: "col-span-4",
+    background: (
+      <>
+      </>
     ),
   },
 ];

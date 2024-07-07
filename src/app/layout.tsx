@@ -15,16 +15,16 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: DATA.name,
-    template: `%s | ${DATA.name}`,
+    default: `${DATA.name} - Développeur Full-stack Freelance`,
+    template: `%s | ${DATA.name} - Développeur Full-stack Freelance`,
   },
-  description: DATA.description,
+  description: "Développeur full-stack freelance à Lyon, création de sites web, développement d'applications, et solutions sur mesure.",
   openGraph: {
-    title: `${DATA.name}`,
-    description: DATA.description,
+    title: `${DATA.name} - Développeur Full-stack Freelance`,
+    description: "Développeur full-stack freelance à Lyon, création de sites web, développement d'applications, et solutions sur mesure.",
     url: DATA.url,
-    siteName: `${DATA.name}`,
-    locale: "en_US",
+    siteName: `${DATA.name} - Développeur Full-stack Freelance`,
+    locale: "fr_FR",
     type: "website",
   },
   robots: {
@@ -57,7 +57,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
+          "min-h-screen bg-background font-sans antialiased max-w-3xl mx-auto py-12 sm:py-24 px-6",
           fontSans.variable
         )}
       >
