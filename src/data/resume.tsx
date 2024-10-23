@@ -21,6 +21,8 @@ export const DATA = {
     "VueJS",
     "React",
     "Next.js",
+    "Nuxt",
+    "Tailwind css",
     "Typescript",
     "Node.js",
     "Express",
