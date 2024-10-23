@@ -14,7 +14,21 @@ export const DATA = {
       contact: "@hugoboinet"
     }
   ],
-  summary: "Diplômé du [DUT informatique de l'IUT2 de Grenoble](/#education) en 2021, j'ai ensuite obtenu un [Master en Développement Web et Systèmes d'Information à Ynov Lyon](/#education).",
+  summary: `Passionné et autodidacte depuis l’âge de 12 ans, j’ai acquis 3 ans d’expérience professionnelle en travaillant sur des technologies telles que Nuxt, Next, Vue et Node, dans des secteurs variés comme le cloud et l’hôtellerie.
+
+  Mon objectif en tant que développeur est de garantir un code de qualité, évolutif, et optimisé afin de : 
+
+  - Éviter à vos utilisateurs de rencontrer des bugs récurrents. 
+  - Préserver la sérénité de vos équipes de développeurs en leur fournissant un code propre et maintenable.
+
+  Voici comment je peux contribuer à vos projets : 
+
+  - Compréhension et définition de vos besoins. 
+  - Développement d’applications Web complexes telles que des ERP, backoffices ou sites web. 
+  - Mise en place et gestion des pipelines CI/CD pour des déploiements fluides et efficaces. 
+  - Création et gestion d’un Design System basé sur l’Atomic Design, avec contrôle des régressions visuelles pour minimiser les risques d'erreurs sur l'interface utilisateur. 
+  - Accompagnement et formation de vos équipes sur les technologies, frameworks et bonnes pratiques les mieux adaptés à vos besoins.
+  `,
   avatarUrl: "/me.jpg",
   skills: [
     "Webflow",
