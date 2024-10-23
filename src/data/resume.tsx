@@ -6,7 +6,7 @@ export const DATA = {
   url: "https://lucasboinet.fr",
   location: "Lyon, FR",
   locationLink: "https://www.google.com/maps/place/lyon",
-  description: "Freelance Developpeur Full-stack & Webflow",
+  description: "Freelance Developpeur Full-stack",
   recommandations: [
     {
       profession: "Directeur Artistique",
@@ -62,7 +62,7 @@ export const DATA = {
       logoUrl: "/logo.jpg",
       start: "September 2024",
       end: '',
-      description: "I'm open to any **Full-stack**/**Frontend** web development or **Webflow** opportuny. You can contact me at **lucasboinet.pro@gmail.com**",
+      description: "Je suis ouvert à des opportunités de missions en tant que développeur **Full-stack**. Vous pouvez me contacter ici : **lucasboinet.pro@gmail.com**",
     },
     {
       company: "Skyloud",
@@ -103,7 +103,7 @@ export const DATA = {
   education: [
     {
       school: "Lyon Ynov Campus",
-      href: "https://buildspace.so",
+      href: "https://www.ynov.com/campus/lyon",
       degree: "Master 2 - Développement Web et Systèmes d'Information",
       logoUrl: "/ynovlyon.jfif",
       start: "2023",
@@ -111,7 +111,7 @@ export const DATA = {
     },
     {
       school: "Lyon Ynov Campus",
-      href: "https://uwaterloo.ca",
+      href: "https://www.ynov.com/campus/lyon",
       degree: "Master 1 - Développement Web",
       logoUrl: "/ynovlyon.jfif",
       start: "2021",
@@ -119,7 +119,7 @@ export const DATA = {
     },
     {
       school: "IUT2 Grenoble",
-      href: "https://wlu.ca",
+      href: "https://iut2.univ-grenoble-alpes.fr/",
       degree: "DUT Informatique",
       logoUrl: "/iut2.jfif",
       start: "2019",
@@ -127,7 +127,7 @@ export const DATA = {
     },
     {
       school: "Lycée Ella Fitzgerald",
-      href: "https://ibo.org",
+      href: "https://ella-fitzgerald.ent.auvergnerhonealpes.fr/",
       degree: "Baccalauréat (Economique et sociale)",
       logoUrl: "/ellafitzgerald.jfif",
       start: "2017",
@@ -185,7 +185,7 @@ export const DATA = {
         }
       ],
       image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      video: "",
     },
     {
       title: "Resume Maker",
@@ -211,7 +211,7 @@ export const DATA = {
         }
       ],
       image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      video: "",
     },
     {
       title: "My Devops",
@@ -223,7 +223,7 @@ export const DATA = {
       links: [],
       image: "",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+        "",
     },
     {
       title: "Wagers",
@@ -235,7 +235,7 @@ export const DATA = {
       links: [],
       image: "",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+        "",
     },
   ],
 } as const;

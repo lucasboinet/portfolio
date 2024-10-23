@@ -49,7 +49,7 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
-      <section id="services">
+      {/* <section id="services">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -68,7 +68,7 @@ export default function Page() {
             <ServicesBento />
           </BlurFade>
         </div>
-      </section>
+      </section> */}
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
